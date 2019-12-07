@@ -93,8 +93,9 @@ def send(modbus_client, command_name: str, value: int = 0, verbose: bool = False
             factor = protocol["current"]["factor"]
             current = unpack_regs_value(answer[1:2], factor)
 
-            print("voltage config: " + str(voltage) + " " + protocol["voltage"]["unit"])
-            print("current config: " + str(current) + " " + protocol["current"]["unit"])
+            if verbose:
+                print("voltage config: " + str(voltage) + " " + protocol["voltage"]["unit"])
+                print("current config: " + str(current) + " " + protocol["current"]["unit"])
             answer = (voltage, current)
 
     elif command_name == "read_voltage":
@@ -105,7 +106,8 @@ def send(modbus_client, command_name: str, value: int = 0, verbose: bool = False
             factor = protocol[command_name]["factor"]
             voltage = unpack_regs_value(answer[0:2], factor)
 
-            #print("voltage: " + str(voltage) + " " + protocol["voltage"]["unit"])
+            if verbose:
+                print("voltage: " + str(voltage) + " " + protocol["voltage"]["unit"])
 
             answer = voltage
 
@@ -117,7 +119,8 @@ def send(modbus_client, command_name: str, value: int = 0, verbose: bool = False
             factor = protocol[command_name]["factor"]
             current = unpack_regs_value(answer[0:2], factor)
 
-            #print("current: " + str(current) + " " + protocol["current"]["unit"])
+            if verbose:
+                print("current: " + str(current) + " " + protocol["current"]["unit"])
 
             answer = current
     elif command_name == "read_status":
