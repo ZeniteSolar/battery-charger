@@ -8,7 +8,7 @@ A custom battery charger using a dc programmable power supply (FCCT 400-40-I fro
 - [x] implement capacity and energy measurements  
 - [ ] transfer `states` to a _json config file_  
 - [ ] transfer `charge_program` to the _json config file_  
-- [ ] add the json config file as a parameter from _command line_  
+- [ ] add the _json config file_ as a parameter from _command line_  
 - [ ] implement a configuration for verbosity  as a parameter from _command line_  
 - [ ] implement the `TCP IP` and `PORT` as a parameter from _command line_ and in the _json confg file_  
 - [ ] callibrate voltage and current setpoint  
@@ -21,7 +21,7 @@ A custom battery charger using a dc programmable power supply (FCCT 400-40-I fro
 ### Dependencies:
   `pyModbusTCP == 0.1.7`
   
-### Setup for development only:
+### Setup for development:
 - install dependencies
 
 To test **without** a power supply:  
