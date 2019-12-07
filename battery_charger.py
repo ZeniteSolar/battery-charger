@@ -149,7 +149,7 @@ def read_voltage() -> float:
 def read_current() -> float:
     return supplier.send(c, "read_current")
 
-def battery_charge():
+def battery_charger():
     global runtime
     global current
     global voltage
@@ -281,5 +281,5 @@ def battery_charge():
 
 
 if __name__== "__main__":
-    battery_charge()
+    battery_charger()
 
