@@ -8,9 +8,11 @@ A custom battery charger using a dc programmable power supply (FCCT 400-40-I fro
 - [x] implement capacity and energy measurements  
 - [ ] transfer `states` to a _json config file_  
 - [ ] transfer `charge_program` to the _json config file_  
-- [ ] add the _json config file_ as a parameter from _command line_  
-- [ ] implement a configuration for verbosity  as a parameter from _command line_  
-- [ ] implement the `TCP IP` and `PORT` as a parameter from _command line_ and in the _json confg file_  
+- [ ] add the _json config file_ as an argument from _command line_  
+- [ ] implement a configuration for verbosity  as an argument from _command line_  
+- [ ] implement the `TCP IP` and `PORT` as an argument from _command line_ and in the _json confg file_  
+- [ ] implement a _csv log_ to a file (which the name sould be passed as an argument from _command line_)
+- [ ] implement a report to txt file
 - [ ] callibrate voltage and current setpoint  
 - [ ] callibrate voltage and current measurements  
 - [ ] test with a battery  
