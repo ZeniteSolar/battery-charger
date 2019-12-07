@@ -5,7 +5,7 @@ A custom battery charger using a dc programmable power supply (FCCT 400-40-I fro
 - [x] implement modbus communication with the power supply  
 - [x] implement custom waveform generation  
 - [x] implement voltage and current measurements  
-- [x] implement capacity and energy measurements  
+- [x] implement capacity and energy computations  
 - [ ] transfer `states` to a _json config file_  
 - [ ] transfer `charge_program` to the _json config file_  
 - [ ] add the _json config file_ as an argument from _command line_  
